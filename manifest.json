@@ -1,6 +1,13 @@
 {
-  "name": "Getting Started Example",
+  "name": "First_Chrome_Extension",
   "version": "1.0",
-  "description": "Build an Extension!",
+  "description": "My first chrome extension",
+  "permissions": [
+    "webRequest", "https://codeforces.com/*"
+  ],
+  "background": {
+    "scripts": ["jquery-3.3.1.min.js","background.js"],
+    "persistent": true
+  },
   "manifest_version": 2
 }
